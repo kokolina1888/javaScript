@@ -1,0 +1,14 @@
+div, input[type=text] {
+	text-align: center;
+	width: 200px;
+	background-color: #1E1F5B;
+	color: #FFB607;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+p.eval {
+	width: 200px;
+	text-align: center;
+
+}

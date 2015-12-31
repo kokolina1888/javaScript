@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Supply</title>
+</head>
+
+<body>
+    <p>
+        <label for="years">your age</label>
+        <input type="text" id="years">
+    </p>
+    <p>
+        <label for="maxAge">your maximum age</label>
+        <input type="text" id="maxAge">
+    </p>
+    <p>
+        <label for="favFood">your favorite food name</label>
+        <input type="text" id="favFood">
+    </p>
+    <p>
+        <label for="perDay">estimate amount of your favorite food per day (a number)</label>
+        <input type="text" id="perDay">
+    </p>
+    <input type="submit" value="calculate" onclick="calcSupply()">
+    <div id="result"></div>
+    <script type="text/javascript" src="lifetimeSupplyCalc.js"></script>
+</body>
+
+</html>
