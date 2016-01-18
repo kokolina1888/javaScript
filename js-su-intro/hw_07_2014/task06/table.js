@@ -47,5 +47,8 @@
 
 
        
-      
+       // put <table> in the <body>
+       element.appendChild(tbl);
+       // tbl border attribute to 
+       tbl.setAttribute("border", "2");
    }

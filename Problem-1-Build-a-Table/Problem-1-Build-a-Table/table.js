@@ -36,17 +36,3 @@ function printTableOfNumbers(input) {
     }
 }
 
-// ------------------------------------------------------------
-// Read the input from the console as array and process it
-// Remove all below code before submitting to the judge system!
-// ------------------------------------------------------------
-
-var arr = [];
-require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-}).on('line', function (line) {
-    arr.push(line);
-}).on('close', function () {
-    printTableOfNumbers(arr);
-});
