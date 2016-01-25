@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="ta">Num1: </label>
+	<input type="text" id="ta" />
+	<label for="tb">Num2: </label>
+	<input type="text" id="tb" />
+	<label for="tc">Num3: </label>
+	<input type="text" id="tc" />
+	<label for="td">Num4: </label>
+	<input type="text" id="td" />
+	<label for="te">Num5: </label>
+	<input type="text" id="te" />
+
+	<a href="#" onclick="onBiggestButtonClick()">Check the digit</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onBiggestButtonClick() {
+			var a = jsConsole.readFloat('#ta'),
+			b = jsConsole.readFloat('#tb'),
+			c = jsConsole.readFloat('#tc'),
+			d = jsConsole.readFloat('#td'),
+			e = jsConsole.readFloat('#te');
+
+			if (a < b) 
+			{
+				if (b < c) 
+				{
+					if (c < d) 
+					{
+						if (d < e) 
+						{
+							jsConsole.writeLine (e);
+						} 
+						else
+						{
+							jsConsole.writeLine(d);
+						}
+					} 
+					else 
+					{
+						if (c < e) 
+						{
+							jsConsole.writeLine (e);
+						} else 
+						{
+							jsConsole.writeLine (c);
+						}
+					}
+				}
+				else 
+				{
+					if (b < d) 
+					{
+						if (d < e) 
+						{
+							jsConsole.writeLine (e);
+						} else 
+						{
+							jsConsole.writeLine(d);
+						}
+					} 
+					else 
+					{
+						if (b < e) 
+						{
+							jsConsole.writeLine (e);
+						}
+						else 
+						{
+							jsConsole.writeLine(b);
+						}
+					}
+				}
+			} 
+			else if (a > b)
+
+			{
+				if (a < c) 
+				{
+					if (c < d) 
+					{
+						if(d < e)
+						{
+							jsConsole.writeLine (e);
+
+						}
+						else
+						{
+							jsConsole.writeLine (d);
+
+						}
+					}
+					else
+					{
+						if (c < e) 
+						{
+							jsConsole.writeLine (e);
+
+						}
+						else 
+						{
+							jsConsole.writeLine (c);
+
+						}
+					}
+
+				}
+				else if (a > c) 
+				{
+					if (a < d) 
+					{
+						if (d < e) 
+						{
+							jsConsole.writeLine(e);
+						}
+						else
+						{
+							jsConsole.writeLine(d);
+
+						}
+					}
+					else if (a > d ) 
+					{
+						if (a < e) 
+						{
+							jsConsole.writeLine(e);
+
+						}
+						else if (a > e)
+						{
+							jsConsole.writeLine(a);
+
+						}
+					}
+
+				}
+			}
+			
+
+
+		}
+	</script>
+</body>
+</html>
+
+
+

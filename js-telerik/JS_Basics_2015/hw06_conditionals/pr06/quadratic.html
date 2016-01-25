@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="ta">Text: </label>
+	<input type="text" id="ta" />
+	<label for="tb">Text: </label>
+	<input type="text" id="tb" />
+	<label for="tc">Text: </label>
+	<input type="text" id="tc" />
+	<br />
+	<a href="#" onclick="onQuadButtonClick()">Check the digit</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onQuadButtonClick() {
+			var a = jsConsole.readFloat('#ta'),
+			b = jsConsole.readFloat('#tb'),
+			c = jsConsole.readFloat('#tc'),
+			det = b*b - 4*a*c,
+			rootA,
+			rootB;
+
+			if (det < 0) {
+				jsConsole.writeLine('No roots');
+			} else if (det === 0) {
+				rootA = -b/(2*a);
+				jsConsole.writeLine(rootA);
+			} else if (det > 0) {
+				rootA = (-b + Math.sqrt(det))/(2*a);
+				rootB = (-b - Math.sqrt(det))/(2*a);
+				jsConsole.writeLine(rootA);
+
+			}			
+		}
+	</script>
+</body>
+</html>
+
+
+

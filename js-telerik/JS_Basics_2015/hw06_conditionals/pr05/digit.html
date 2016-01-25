@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-digit">Text: </label>
+	<input type="text" id="tb-digit" />
+	<br />
+	<a href="#" onclick="onDigitButtonClick()">Check the digit</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onDigitButtonClick() {
+			var digitIndex = jsConsole.readInteger("#tb-digit"),
+				digit;
+			switch (digitIndex) {
+				case 1: digit = "One"; break;
+				case 2: digit = "Two"; break;
+				case 3: digit = "Three"; break;
+				case 4: digit = "Four"; break;
+				case 5: digit = "Five"; break;
+				case 6: digit = "Six"; break;
+				case 7: digit = "Seven"; break;
+				case 8: digit = "Eight"; break;
+				case 9: digit = "Nine"; break;
+				case 0: digit = "Zero"; break;
+				default: digit = "Not a digit"; break;
+			}
+			jsConsole.writeLine(digit);
+		}
+	</script>
+</body>
+</html>
+
+
+

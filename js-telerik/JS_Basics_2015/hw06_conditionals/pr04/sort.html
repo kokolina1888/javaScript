@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="ta-number">Number a: </label>
+	<input type="text" id="ta-number" />
+	<label for="tb-number">Number b: </label>
+	<input type="text" id="tb-number" />
+	<label for="tc-number">Number c: </label>
+	<input type="text" id="tc-number" />	
+	
+	<a href="#" onclick="onMultiplicationButton()">Result</a>
+	
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onMultiplicationButton() {
+			var numA = jsConsole.readFloat('#ta-number'),
+			numB = jsConsole.readFloat('#tb-number'),
+			numC = jsConsole.readFloat('#tc-number');
+			//abc
+			//a>b && b>c
+			//acb
+			if ((numA > numB) && (numB > numC)) {
+				jsConsole.writeLine (numA + ' ' + numB + ' ' + numC);
+			} else if ((numB > numA) && (numA > numC)){
+				jsConsole.writeLine (numB + ' ' + numA + ' ' + numC);
+			} else if ((numC > numA) && (numA > numB)) {
+				jsConsole.writeLine(numC + ' ' + numA + ' ' + numB);
+			} else if ((numB > numC) && (numC > numA)) {
+				jsConsole.writeLine(numB + ' ' + numC + ' ' + numA);
+
+			} else if ((numA > numC) && (numC > numB)) {
+				jsConsole.writeLine(numA + ' ' + numC+ ' ' + numB);
+
+			} else if ((numC > numB) && (numB > numA)) {
+				jsConsole.writeLine(numC + ' ' + numB + ' ' + numA);
+
+			}
+		}
+		
+	</script>
+</body>
+</html>
+
+
+

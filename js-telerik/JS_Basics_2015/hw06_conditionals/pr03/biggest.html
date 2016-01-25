@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="ta-number">Number a: </label>
+	<input type="text" id="ta-number" />
+	<label for="tb-number">Number b: </label>
+	<input type="text" id="tb-number" />
+	<label for="tc-number">Number c: </label>
+	<input type="text" id="tc-number" />	
+	
+	<a href="#" onclick="onMultiplicationButton()">Result</a>
+	
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onMultiplicationButton() {
+			var numA = jsConsole.readFloat('#ta-number'),
+				numB = jsConsole.readFloat('#tb-number'),
+				numC = jsConsole.readFloat('#tc-number');
+			if(numA > numB) {
+				if((numB > numC) || ((numB < numC) && (numA > numC))) {
+					jsConsole.writeLine('Biggest ' + numA);
+				} else if ((numB < numC) && (numA < numC)) {
+					jsConsole.writeLine('Biggest ' + numC);
+				}
+			} else if (numA < numB) {
+				if (numB < numC) {
+					jsConsole.writeLine('Biggest ' + numC)
+				} else {
+					jsConsole.writeLine('Biggest ' + numB)
+				}
+			}
+		}
+		
+	</script>
+</body>
+</html>
+
+
+
