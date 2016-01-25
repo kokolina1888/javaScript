@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="styles/js-console.css">
+<body>
+<div id="js-console"></div>
+<script src="scripts/js-console.js"></script>
+<script type="text/javascript">
+   jsConsole.writeLine("Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects");
+   function lexSmallestLargest(element){
+    var elements,
+        len;
+    elements = Object.getOwnPropertyNames(element);
+    len = elements.length;
+    //returning array
+    //sorting array elements alphabetically
+    elements.sort();
+    jsConsole.writeLine("Element " + element);
+    jsConsole.writeLine("Lexicographically first - " + elements[0] + ", last - " + elements[len-1]);
+   }
+   lexSmallestLargest(document);
+   lexSmallestLargest(window);
+   lexSmallestLargest(navigator);
+</script>
+</body>
+</html>
+
+    
+
