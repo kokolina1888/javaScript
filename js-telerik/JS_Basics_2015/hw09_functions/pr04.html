@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>The first div element in the document.</div>
+<div>Another div element.</div>
+
+<div>Click the button to find out how many div elements there are in this document.</div>
+
+<div>The first div element in the document.</div>
+<div>Another div element.</div>
+
+<div>Click the button to find out how many div elements there are in this document.</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="demo">I am also a div element.</div>
+<script>
+function myFunction() {
+    var nodelist = document.getElementsByTagName("div").length;
+    document.getElementById("demo").innerHTML = nodelist;
+}
+</script>
+
+</body>
+</html>
