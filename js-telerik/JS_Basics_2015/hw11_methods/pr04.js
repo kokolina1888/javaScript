@@ -23,7 +23,7 @@ function is18(gender, index) {
 
 var newAr = printUnderaged(arr, is18);
 var result = newAr.filter(function(obj) {
-  return num = obj.age;
+  return obj.age;
 });
 
 console.log(result);
