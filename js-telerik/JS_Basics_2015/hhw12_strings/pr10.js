@@ -11,7 +11,7 @@ check,
 lenHelp,
 flag;
 
-text = 'ABBA exe aa a ab iko lamal';
+text = 'ABBA exe aa a ab iko lamal trearaert';
 resArr = [];
 resArr = text.split(' ');
 len = resArr.length;
