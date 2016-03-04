@@ -1,0 +1,40 @@
+<!--You are given a HTML file holding several <div> elements. Write a JavaScript code to print the text content of all <div> elements as unordered list:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display div content</title>
+</head>
+<body>
+	<div>first div</div>
+	<div>second div</div>
+	<div class="empty"></div>
+	<div>third div
+		<div>inner div</div>
+	</div>
+	<ul id="result"></ul>
+	<script>
+		var divs, divsLen, i, divsText, li, ul, dFrag;
+		divs = document.getElementsByTagName('div');
+		divsLen = divs.length;
+
+		dFrag = document.createDocumentFragment();
+		ul = document.getElementById('result');
+
+		for(i = 0; i<divsLen;i+=1){
+			divsText = divs[i].textContent;
+			if(divsText){
+				
+			li = document.createElement('li');
+			li.innerHTML = divsText;
+
+			console.log(li);
+			dFrag.appendChild(li);
+			}
+		}
+		ul.appendChild(dFrag);
+
+	</script>
+
+</body>
+</html>
