@@ -11,6 +11,7 @@ function solve(params) {
 			for(k = 0; k<=s/c3; k++){
 				all = i*c1 + j*c2+k*c3;
 				if(all>answer && all<=s){
+					
 					answer = all;
 					}
 			}			
