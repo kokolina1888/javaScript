@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing Task-1</title>
+</head>
+<body>
+  <div id="root">
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+  </div>
+  
+  
+  <script>
+    var element, btn, content, btnLen,
+    i, contentLen, flagVis = true, j, l, m;
+    element = document.getElementById("root");
+    btn = element.getElementsByClassName("button");
+    content = element.getElementsByClassName('content');
+    btnLen = btn.length;
+    contentLen = content.length;
+    var children = element.children;
+    var childrenLen = children.length;
+    console.log(childrenLen);
+
+    for(i = 0; i<btnLen; i+=1){
+      btn[i].innerHTML = 'hide';
+    }
+
+    element.addEventListener("click", function (e) {
+      if (!e) e = window.event;
+      var target = e.target;
+    //  console.log(target);
+    //target.previousSibling;
+    l = 0;
+
+    while( (target = target.previousElementSibling) !== null ) {
+      if(target.className === 'button')
+      {
+        l++;
+      }
+    }
+    target = e.target;
+
+
+    m = 0;
+    if(l > 0){
+      target = target.previousElementSibling;
+     while( (target = target.previousElementSibling) !== null ) {
+      if(target.className === 'content')
+      {
+        m++;
+      }
+    }
+    target = e.target;
+    }
+    
+
+
+    if (m > 0) {
+
+      if(flagVis === true){
+        content[0].style.display = 'none';
+        target.innerHTML = 'show';
+        flagVis = false;
+
+      }
+      else {
+        content[0].style.display = 'block';
+        target.innerHTML = 'hide';
+        flagVis = true;
+      }
+    }
+
+
+      //console.log(target.previousElementSibling.className);
+
+
+    }, false);
+
+    console.log(content);
+
+  </script>
+</body>
+</html>

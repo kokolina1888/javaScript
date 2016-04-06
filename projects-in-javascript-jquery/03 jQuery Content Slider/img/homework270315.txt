@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<html>
+<head>How to create HTML tables</head>
+</html>
