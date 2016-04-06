@@ -1,6 +1,0 @@
--
-firefox
--
-skype
-lord
-webKit

@@ -1,2 +1,0 @@
-fruit=[apple, banana]vegetable=[tomato, potato]
-sweet=[chocolate, sugar]

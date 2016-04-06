@@ -1,1 +1,0 @@
-{"CSKA":{"goalsScored":0,"goalsConceded":1,"matchesPlayedWith":["Levski"]},"Levski":{"goalsScored":1,"goalsConceded":0,"matchesPlayedWith":["CSKA"]}}

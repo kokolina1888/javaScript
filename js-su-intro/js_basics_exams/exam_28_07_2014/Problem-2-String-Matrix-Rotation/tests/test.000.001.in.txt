@@ -1,4 +1,0 @@
-Rotate(90)
-hello
-softuni
-exam

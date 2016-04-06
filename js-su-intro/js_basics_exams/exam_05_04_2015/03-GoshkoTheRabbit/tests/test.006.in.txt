@@ -1,5 +1,0 @@
-right, right, down, left, left
-qwekjs, asda, mxz
-qwekjs, asda, xnca
-qwekjs, asda, xnca
-qwekjs, asda, xnca

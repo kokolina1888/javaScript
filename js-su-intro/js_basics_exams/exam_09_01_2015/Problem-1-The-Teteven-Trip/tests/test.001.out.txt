@@ -1,5 +1,0 @@
-BMW gas 1 17
-Golf gas 2 14
-Lada gas 1 16
-Mercedes gas 2 16
-

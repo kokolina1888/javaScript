@@ -1,5 +1,0 @@
-right, right, down, left, left, down
-qwe{!}kjs, a{*}s{&}da, mxz
-q{#}w{!}ekjs, asda, xnc{*}a
-qwe{#}kjs, as{#}da, xnca
-qwekjs, as{#}{#}da, xnca

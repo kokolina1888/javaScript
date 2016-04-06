@@ -1,2 +1,0 @@
-field=value1&field=value2&field=value3
-http://example.com/over/there?name=ferret

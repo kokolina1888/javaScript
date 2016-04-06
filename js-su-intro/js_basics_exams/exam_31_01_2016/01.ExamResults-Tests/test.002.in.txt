@@ -1,2 +1,0 @@
-Student1 C#-Advanced 390 2
-C#-Advanced

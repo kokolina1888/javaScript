@@ -1,4 +1,0 @@
-foo=[foo, 5 203]value=[val]
-foo=[poo]value=[valley]dog=[wow]
-url=[https://softuni.bg/trainings/coursesinstances/details/1070]
-trainer=[nakov]course=[oop, php]

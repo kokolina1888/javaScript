@@ -1,9 +1,0 @@
-/
-/courses
-/forum
-#
-javascript:alert('hi yo')
-http://www.nakov.com
-#empty
-#
-#commented

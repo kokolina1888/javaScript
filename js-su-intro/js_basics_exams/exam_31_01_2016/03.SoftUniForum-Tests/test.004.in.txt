@@ -1,9 +1,0 @@
-#gosho, #pesho, #gosho, #pesho, #otiame, #namore
-aideee #gosho i #pesho
-<code>
-function solve(input) {
-//zaebi tapanarshtinata #trygwamsi
-console.log(generateSolution(input));
-}
-</code>
-gosho pesho otiame namore

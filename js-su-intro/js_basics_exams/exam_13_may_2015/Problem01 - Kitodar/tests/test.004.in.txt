@@ -1,2 +1,0 @@
-	mine mina - golD : 5
-mine mina: gold: 5

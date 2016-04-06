@@ -1,4 +1,0 @@
-BMW petrol 1 320
-Golf petrol 2 150
-Lada petrol 1 202
-Mercedes petrol 2 312
