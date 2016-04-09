@@ -7,35 +7,21 @@ function solve(args){
 		color = input[i][0];
 		if(input[i][1] === 'name'){
 			currName = input[i][2];
-		} else if (input[i][1] === 'age'){
-			currAge = input[i][2];
-		} 
-		
-
-		if(!colors[color]){
-			colors[color]= {
-				'age': '',
-				'name': '',
-				'opponents': [],
-				'rank': '',
-				'win': 0,
-				'loss': 0
-			};
-		// } else {
-		// 	if(currName!== undefined){
-		// 		colors[color].name = currName;
-		// 	} else if(currAge){
-		// 		colors[color].age = currAge;
-		// 	// } else if(input[i][1] === 'win'){
-		// 	// 	colors[color].win+=1;
-		// 	// 	colors[color].opponents.push(input[i][2]);
-		// 	// } else if(input[i][1] === 'loss'){
-		// 	// 	colors[color].loss+=1;
-		// 	// 	colors[color].opponents.push(input[i][2]);
-		// 	// }
-		// }
-	}
+			if(!colors[color]){
+				colors[color] = {
+					age:'',
+					name:''
+				};//obj
+			}//if
+			if(!colors[color][currName]){
+				colors[color] = {
+					age: '',
+					name: currName
+				};
+			} 
+		} 		
 }
+	
 console.log(JSON.stringify(colors));
 
 
