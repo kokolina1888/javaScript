@@ -17,8 +17,7 @@ function solve (arguments) {
             if (currentData[1] === 'win') {
                 associativeArr[color]['wins'] += 1;
             } else {
-                associativeArr[color]['losses'] +=1;
-            }
+                associativeArr[color]['losses'] +=1;            }
 
             associativeArr[color]['opponents'].push(currentData[2]);
         }
