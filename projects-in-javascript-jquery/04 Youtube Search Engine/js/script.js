@@ -90,7 +90,7 @@ var output = '<li>'+
 '<img src="'+thumb+'">'+
 '</div>'+
 '<div class="list-right">'+
-'<h3>'+title+'</h3>'+
+'<h3><a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>'+
 '<small>By <span class="cTitle">'+channelTitle+'</span> on'+videoDate+'</small>'+
 '<p>'+description+'</p>'+
 '</div>'+
@@ -153,8 +153,7 @@ $('#buttons').append(buttons);
 }
 
 
-//Next Page func
-
+ 
 function prevPage(){
 	var token = $('#prev-button').data('token');
 	var q = $('#prev-button').data('query');
