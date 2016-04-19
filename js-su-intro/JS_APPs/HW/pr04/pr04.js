@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	var speed = 500, 				//fade speed
 		autoswitch = true,			//auto slider option
-		autoswitch_speed = 5000; 	//auto slider speed
+		autoswitch_speed = 8000; 	//auto slider speed 8 sec
 
 		//ADD INITIAL ACTIVE CLASS
 
