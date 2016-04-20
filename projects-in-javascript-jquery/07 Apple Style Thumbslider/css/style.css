@@ -31,7 +31,7 @@ p {
 }
 
 header{
-	background: url('../img/panel.jpg') repeat-x bottom center #fff;
+	background-color: #A59696;
 	height: 30px;
 	padding-top: 10px;
 	border-bottom: 1px solid #ccc;
@@ -44,9 +44,10 @@ header{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: url('../img/panel.jpg') repeat-x bottom center #fff;
-	width: 900px;
+	background-color: #ccc;
 
+	width: 900px;
+	
 	overflow: hidden;
 }
 #slides {
@@ -56,8 +57,7 @@ header{
 	padding-top: 20px;
 }
 .slide {
-	width: 900px;
-	text-align: center;
+
 	float: left; !important;
 }
 
@@ -74,7 +74,7 @@ li{
 	overflow: hidden;
 }
 #menu li.active, #menu li.active:hover{
-	background: url('../img/active-bg.png') no-repeat;
+	background-color: #A26E6E;
 }
 #menu li.active {
 	cursor: default;
@@ -86,11 +86,7 @@ li{
 }
 #menu li a {
 	display: block;
-	background: url('../img/sep.png') no-repeat right;
+	background-color: #C47272;
 	height: 35px;
 	padding-top: 10px;
-}
-img {
-	border: none;
-	margin: 0 auto;
 }
