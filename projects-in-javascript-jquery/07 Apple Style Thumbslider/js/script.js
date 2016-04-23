@@ -23,6 +23,7 @@ $('#slides').width(totalWidth);
 $('#menu ul li a').click(function(e, keepScroll){
 	//remove active class and add inactive
 	$('li.product').removeClass('active').addClass('inactive');
+	
 	//add active class to parent, (this) is the current link
 
 	$(this).parent().addClass('active');
@@ -52,7 +53,18 @@ function autoScroll(){
 }
 //duration for autoscroll
 //duration is in seconds
-var duration = 10;
+var duration = 4;
 //duration should be in milisec
 var itvl = setInterval(function(){autoScroll();}, duration*1000);
 });
+// function scrollFooterMostPopularPosts() {
+//         var $el =jQuery('ul.footer-popular-posts').find('li').first();
+//         jQuery($el).animate({
+//             marginTop: '-120'
+//         }, 500, function () {
+//             if($el.not(':first-child'))
+//                 $el.prev().before($el);
+//             //move element to end
+//             jQuery($el).css({'margin-top': '0px'});
+//             jQuery($el).parent().append($el);
+//         });

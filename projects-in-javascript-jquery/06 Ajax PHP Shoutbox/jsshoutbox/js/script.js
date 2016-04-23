@@ -14,6 +14,7 @@ if(name===''||shout===''){
 		url:'../jsshoutbox/shoutbox.php',
 		data: dataString,
 		cache: false,
+		//dataType: 'JSON',
 		success: function(html){
 			$('#shouts ul').prepend(html);
 		}
@@ -25,7 +26,7 @@ return false;
 
 });
 
-//forma MySQL date
+//format MySQL date
 
 function getDate(){
 	var date = new Date();
